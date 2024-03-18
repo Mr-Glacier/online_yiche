@@ -2,10 +2,13 @@ package com.zeda.Until;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
+import java.net.URL;
 import java.net.URLEncoder;
 
 public class HttpUntil {
+//    这个类是用于易车API发送请求,已经完成破解x-sign ;
     public String Method_RequestAPI(String main_Url, String param) {
         String resultJson = "Error";
         String timestamp = String.valueOf(System.currentTimeMillis());
@@ -43,5 +46,17 @@ public class HttpUntil {
             e.printStackTrace();
         }
         return resultJson;
+    }
+
+    public String Method_DownHTML(String url) {
+        String connent = "ERROR";
+        try {
+            Document document = Jsoup.parse(new URL(url).openStream(), "UTF-8", url);
+            Thread.sleep(550);
+            return document.toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return connent;
     }
 }

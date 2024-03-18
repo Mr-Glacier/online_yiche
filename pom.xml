@@ -29,7 +29,6 @@
             <version>1.11.3</version>
         </dependency>
 
-
         <!-- fastionJson包-->
         <dependency>
             <groupId>com.alibaba</groupId>

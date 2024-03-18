@@ -1,0 +1,39 @@
+{
+  "Parameter": [
+    {
+      "DBDriver": "com.mysql.cj.jdbc.Driver",
+      "DBConnectionStr": "jdbc:mysql://zedata2024.mysql.rds.aliyuncs.com:3306/",
+      "DBName": "zedata_yiche?useSSL=false",
+      "DBUserName": "root",
+      "DBUserPass": "ZEDATA2024ryk",
+      "EntityPath": "com.zeda.Entity.",
+      "EntityList": [
+        {
+          "EntityName": "Bean_brand",
+          "PrimaryKey": "C_ID",
+          "TableName": "t_yiche_brand"
+        },{
+          "EntityName": "Bean_model",
+          "PrimaryKey": "C_ID",
+          "TableName": "T_yiche_Model_20240311"
+        },{
+          "EntityName": "Bean_version",
+          "PrimaryKey": "C_ID",
+          "TableName": "T_yiche_Version_20240311"
+        },{
+          "EntityName": "Bean_configcolumn",
+          "PrimaryKey": "C_ID",
+          "TableName": "T_Column_20240311"
+        },{
+          "EntityName": "Bean_version_config",
+          "PrimaryKey": "C_ID",
+          "TableName": "T_yiche_Config_20240311"
+        },{
+          "EntityName": "Bean_config_chose",
+          "PrimaryKey": "C_ID",
+          "TableName": "T_yiche_Config_chose_20240311"
+        }
+      ]
+    }
+  ]
+}
